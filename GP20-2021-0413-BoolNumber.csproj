@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>GP20_2021._0413_BoolNumber</RootNamespace>
+    <RootNamespace>GP20_2021_0413_BoolNumber</RootNamespace>
   </PropertyGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-namespace GP20_2021._0413_BoolNumber {
+namespace GP20_2021_0413_BoolNumber {
 	/// <summary>
 	/// The Bool-Number is a bit-representation of a number as a bool array.
 	/// Its size is 8 bits (1 Byte)

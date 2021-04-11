@@ -1,4 +1,4 @@
-namespace GP20_2021._0413_BoolNumber {
+namespace GP20_2021_0413_BoolNumber {
 	/// <inheritdoc cref="IBoolNumber"/>
 	public class BoolNumber : IBoolNumber {
 		/// <summary>
