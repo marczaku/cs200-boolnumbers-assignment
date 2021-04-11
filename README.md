@@ -1,4 +1,4 @@
-# GP20-2021.0413-BoolNumber
+# GP20-2021-0413-BoolNumber
 BoolNumber-Assignment
 
 Implement the `BoolNumber`-Class as required by the documentation.
