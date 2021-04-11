@@ -1,10 +1,14 @@
 # GP20-2021-0413-BoolNumber
 BoolNumber-Assignment
 
+### Task
 Implement the `BoolNumber`-Class as required by the documentation.
 Use the `Program`-Class to test your implementation.
 
-Bonus-Assignments:
+### Important!
+Do not change the interface, unless officially changed by me. I expect to be able to use the class using the defined interface.
+
+###Bonus-Assignments:
 - Implement an `Indexer` (the `[]`-operator).
 - Implement mathematical operators `+`, `-`.
 - Implement comparison operators `==`, `!=` `<`, `<=`, `>`, `>=`
