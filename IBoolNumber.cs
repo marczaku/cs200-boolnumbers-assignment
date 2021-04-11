@@ -1,8 +1,12 @@
 namespace GP20_2021_0413_BoolNumber {
 	/// <summary>
-	/// The Bool-Number is a bit-representation of a number as a bool array.
-	/// Its size is 8 bits (1 Byte)
+	/// The Bool-Number is a bit-representation of a signed number as a bool array.
+	/// A 1 bit is represented as a true-bool and a 0 bit is represented as a false-bool.
+	/// The smallest bit is at index 0 and the largest bit at index 7.
+	/// Its size is always 8 bits (1 Byte)
+	/// It may contain positive as well as negative numbers and zero.
 	/// It contains basic mathematical operations.
+	/// All mathematical operations are working directly on the bool-bits.
 	/// </summary>
 	public interface IBoolNumber {
 		/// <summary>
@@ -66,9 +70,15 @@ namespace GP20_2021_0413_BoolNumber {
     
 		/// <summary>
 		/// Returns a string that is formatted like this:
-		/// 0b00000000 (0)
-		/// Where 0b0000000 is the bit-representation
-		/// And (0) the decimal representation of the number.
+		/// "0b00000000 (0)"
+		/// Where 0b0000000 is the bit-representation including leading zeros
+		/// 00000000 are the values of all bits. Where true = 1 and false = 0.
+		/// The smallest bit is always at the last index (marked with s in the next sample)
+		/// The largest bit is always at the first index (marked with l in the next sample)
+		/// "0bl000000s (0)"
+		/// And (0) the decimal representation of the number. No leading zeros.
+		/// For negative numbers, the string is formatted like this:
+		/// "0b00000000 (-1)"
 		/// </summary>
 		/// <returns></returns>
 		string ToString();
