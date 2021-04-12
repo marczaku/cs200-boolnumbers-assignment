@@ -2,17 +2,55 @@ namespace GP20_2021_0413_BoolNumber {
 	/// <summary>
 	/// The Bool-Number is a bit-representation of a signed number as a bool array.
 	/// A 1 bit is represented as a true-bool and a 0 bit is represented as a false-bool.
-	/// The smallest bit is at index 0 and the largest bit at index 7.
+	/// The least significant bit is at index 0 and the most significant bit at index 7.
+	///
+	/// ------------------
+	/// SAMPLE_1
+	/// The bits are ordered in the array like this:
+	/// The representation of the bits 0b0101 would be new bool[]{true, false, true, false}
+	/// The representation of the bits 0b111000 would be new bool[]{false, false, false, true, true, true}
+	/// The representation of the bits 0b11 would be new bool[]{true, true}
+	/// ------------------
+	/// 
 	/// Its size is always 8 bits (1 Byte)
 	/// It may contain positive as well as negative numbers and zero.
+	/// ------------------
+	/// SAMPLE_2
+	/// In other words: it can only hold bytes with 8 bits like this:
+	/// The representation of the bits 0b11110000 would be
+	///        new bool[]{false, false, false, false, true, true, true, true}
+	/// The representation of the bits 0b01010101 would be
+	///        new bool[]{true, false, true, false, true, false, true, false}
+	///
+	/// Representations with any other amount of bits are not supported by this class.
+	/// (Therefore, the samples from SAMPLE_1 are invalid for this class)
+	/// ------------------
+	/// 
+	///
+	/// It should use the Two's Complement Notation.
+	/// Hint: It has to do with how to store the information,
+	/// whether a number is positive or negative.
+	/// You only have eight bits available.
+	/// 
 	/// It contains basic mathematical operations.
 	/// All mathematical operations are working directly on the bool-bits.
+	///
+	/// You are __NOT__ allowed to convert the bits to an Integer or any other format.
+	/// And then let C# do the maths using + operators etc.
+	/// I expect you to compare bits and do the maths line by line like this or similarly:
+	/// if(other.bits[0] == true && this.bits[0] == true)
+	/// 
 	/// </summary>
 	public interface IBoolNumber {
 		/// <summary>
-		/// Returns an array containing true / false values for all
+		/// Returns an array of exactly 8 Bits containing true / false values for all bits of this number
 		/// </summary>
 		bool[] Bits {get;}
+		
+		/// <summary>
+		/// This number should ALWAYS return 8
+		/// </summary>
+		int NumberOfBits { get; }
     
 		/// <summary>
 		/// Adds two numbers and returns the result as a new BoolNumber-Object.
@@ -60,7 +98,7 @@ namespace GP20_2021_0413_BoolNumber {
 		/// Returns true, if the this number is grater than the other number.
 		/// </summary>
 		/// <returns>True, if this number is greater than the other number.</returns>
-		bool IsGraterThan(IBoolNumber other);
+		bool IsGreaterThan(IBoolNumber other);
     
 		/// <summary>
 		/// Returns true, if the this number is smaller than the other number.
