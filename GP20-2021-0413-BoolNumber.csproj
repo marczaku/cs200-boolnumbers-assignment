@@ -6,4 +6,16 @@
     <RootNamespace>GP20_2021_0413_BoolNumber</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="BoolNumber.Test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="BoolNumber.Test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="BoolNumber.Test\**" />
+  </ItemGroup>
+
 </Project>
