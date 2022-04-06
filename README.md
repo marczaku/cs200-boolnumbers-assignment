@@ -42,7 +42,7 @@ In class, we have learned about:
 Now it's your time to put this knowledge to use!\
 We want to implement our own binary representation of a number.\
 The `BinaryBool`-Class is documented in the code.\
-In general, you are supposed to convert a number to a bool-array that represents the bits of a number in Memory.\
+In general, you are supposed to convert a number to a bool-array that represents the bits of a number in Memory.
     
 
 ### Task
