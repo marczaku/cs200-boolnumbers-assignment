@@ -1,5 +1,4 @@
-# GP20-2021-0412-BoolNumber
-BoolNumber-Assignment
+# BoolNumber-Assignment
 
 In class, we have learned about:
 - The decimal system:
@@ -38,24 +37,24 @@ In class, we have learned about:
             - Adding two numbers works almost magically
             - By utilizing bit overflow
                 - which describes the process of losing information due to running out of bits
-    
+
 Now it's your time to put this knowledge to use!\
 We want to implement our own binary representation of a number.\
 The `BinaryBool`-Class is documented in the code.\
 In general, you are supposed to convert a number to a bool-array that represents the bits of a number in Memory.
     
 
-### Task
+## Task
 Implement the `BoolNumber`-Class as required by the documentation.\
 There is a handful of Methods and Properties defined in the `BoolNumber`-`class`.\
 And another handful in the `IBoolNumber`-`interface`.\
 Interfaces are a great way of defining / documenting, what a class's implementation is supposed to look like.\
 Use the `Program`-Class to test your implementation.
 
-### Important!
+## Important!
 Do not change the interface, unless officially changed by me. I expect to be able to use the class using the defined interface.
 
-### Bonus-Assignments:
+## Bonus-Assignments:
 - Implement an `Indexer` (the `[]`-operator).
 - Implement mathematical operators `+`, `-`.
 - Implement comparison operators `==`, `!=` `<`, `<=`, `>`, `>=`
@@ -64,13 +63,13 @@ Do not change the interface, unless officially changed by me. I expect to be abl
 - Implement the `IEnumerable`-interface. (It would make a lot of sense for a class like this, to allow easier enumeration over the bits)
 - Implement an alternative implementation using a `struct` instead of a `class` (It would make much more sense in this case)
 
-### First steps
+## First steps
 
 Clone this repository to your computer (in `GitHub Desktop` or any other Git-Client.)\
 Open the `.csproj`-File in the root of this repository (in `Jetbrains Rider` or any other C# IDE)\
 Take a look at the `BoolNumber`-class. Many Properties and Methods are not implemented, yet. Also, the `BoolNumber`-class implements the `IBoolNumber`-interface, but does not contain the interface's methods, yet.
 
-### Further help
+## Further Help
 
 Start by adding an empty implementation of the interface to your `BoolNumber`-class (your IDE should be able to do that for you).\
 Then, I recommend these steps to get started:
@@ -83,3 +82,36 @@ Then, I recommend these steps to get started:
     - Start with printing the Binary-Part first.
     - Then think about how to print the Decimal representation. You will have to convert a binary number to a decimal number to do this.
 - Now, work your way through the remaining methods in any order you like.
+
+## Grading
+
+I have written automated tests which will grade you only for correct answers. Therefore, it is important to implement everything exactly as instructed.
+
+These are the Tests and the amount of points that you can receive:
+| Test | Score |
+|-----|-----|
+| FromNumber | 26 |
+| ToString | 15 |
+| Add | 15 |
+| Subtract | 10 |
+| Divide | 5 |
+| Multiply | 5 |
+| IsGreaterThan | 5 |
+| IsEqualTo | 5 |
+| IsSmallerThan | 5 |
+| IsNegative | 3 |
+| Min | 3 |
+| Max | 3 |
+| Total | 100 |
+
+You will receive the following Grade:
+
+| Score | Grade |
+| ---- | ----- |
+| 90+ | VG (A*) |
+| 80+ | VG (A) |
+| 70+ | VG (B) |
+| 60+ | G (C) |
+| 50+ | G (D) |
+| 1+ | IG (E) |
+| 0 | IG (F) |
