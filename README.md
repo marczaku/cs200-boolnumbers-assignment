@@ -115,3 +115,5 @@ You will receive the following Grade:
 | 50+ | G (D) |
 | 1+ | IG (E) |
 | 0 | IG (F) |
+
+No points are given to the Bonus Exercises. But they are great training nevertheless! :)
